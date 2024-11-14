@@ -5,21 +5,28 @@ import { Cover } from "@/components/ui/cover";
 export function Resume() {
   const data = [
     {
-      title: "Experience",
+      title: "Freelancer",
       content: (
         <div className="flex flex-col gap-[30px]">
           <div>
             <h2 className="font-[600] text-[#f4f4f4] text-[1.8rem]">
-              <Cover>Freelancing</Cover>
+              <Cover>React & Next Js Developer</Cover>
             </h2>
             <span className="text-blue-400 my-[10px]">May 2023 - Nov 2024</span>
             <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
               Work as a FullStack Developer
             </p>
           </div>
+        </div>
+      ),
+    },
+    {
+      title: "Inkrefuge",
+      content: (
+        <div className="flex flex-col gap-[30px]">
           <div>
             <h2 className="font-[600] text-[#f4f4f4] text-[1.8rem]">
-              <Cover>Inkrefuge</Cover>
+              <Cover>MERN Developer</Cover>
             </h2>
             <span className="text-blue-400 my-[10px]">Feb 2021 - Apr 2023</span>
             <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
@@ -30,16 +37,16 @@ export function Resume() {
       ),
     },
     {
-      title: "Education",
+      title: "Green Line Technologies",
       content: (
         <div className="flex flex-col gap-[30px]">
           <div>
             <h2 className="font-[600] text-[#f4f4f4] text-[1.8rem]">
-              <Cover>Bishop Heber College</Cover>
+              <Cover>PHP Programmer & Codeigniter Developer</Cover>
             </h2>
-            <span className="text-blue-400 my-[10px]">2016 - 2019</span>
+            <span className="text-blue-400 my-[10px]">Oct 2019 - Sep 2020</span>
             <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-              Bachelor of Computer Applications ( BCA )
+              Work as a FullStack Developer
             </p>
           </div>
         </div>

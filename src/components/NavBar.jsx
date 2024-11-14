@@ -35,11 +35,11 @@ export function NavBar() {
       href: "#services",
     },
     {
-      title: "Projects",
+      title: "Skills",
       icon: (
-        <Settings2Icon className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <StarIcon className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#projects",
+      href: "#skills",
     },
     {
       title: "Resume",
@@ -49,19 +49,11 @@ export function NavBar() {
       href: "#resume",
     },
     {
-      title: "Testimonials",
+      title: "Projects",
       icon: (
-        <StarIcon className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <Settings2Icon className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#testimonials",
-    },
-
-    {
-      title: "Pricing",
-      icon: (
-        <DollarSignIcon className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#pricing",
+      href: "#projects",
     },
     {
       title: "Contact",

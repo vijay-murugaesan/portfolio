@@ -1,11 +1,11 @@
 import { Contact } from "@/components/Contact";
-import HeroSection from "@/components/heroSection";
+import Footer from "@/components/Footer";
+import HeroSection from "@/components/HeroSection";
 import { NavBar } from "@/components/NavBar";
-import Pricing from "@/components/Pricing";
 import { Projects } from "@/components/Projects";
 import { Resume } from "@/components/Resume";
 import { Services } from "@/components/Services";
-import { Testimonials } from "@/components/Testimonials";
+import { Skills } from "@/components/Skills";
 
 export default function Home() {
   return (
@@ -13,11 +13,11 @@ export default function Home() {
       <NavBar />
       <HeroSection />
       <Services />
-      <Projects />
+      <Skills />
       <Resume />
-      <Testimonials />
-      <Pricing />
+      <Projects />
       <Contact />
+      <Footer />
     </>
   );
 }

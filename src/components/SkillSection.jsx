@@ -3,22 +3,11 @@ import { animate, motion } from "framer-motion";
 import React, { useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { GoCopilot } from "react-icons/go";
-import NextJsLogo from "./skills/NextJsLogo";
-import TsLogo from "./skills/TsLogo";
-import JsLogo from "./skills/JsLogo";
-import ReactLogo from "./skills/ReactLogo";
-import ExpressLogo from "./skills/ExpressLogo";
 
-export function Skills() {
+export function SkillSection() {
   return (
-    <div
-      className="h-[35rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden"
-      id="skills"
-    >
-      <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center text-white font-medium">
-        Tools Of The Present And Future
-      </h4>
-
+    <div className="flex flex-col mt-[100px] justify-start items-center">
+      <div className="text-xl mb-[-50px] md:mb-[-100px] font-bold text-neutral-200">Skills</div>
       <CardSkeletonContainer>
         <Skeleton />
       </CardSkeletonContainer>
@@ -82,20 +71,20 @@ const Skeleton = () => {
   return (
     <div className="p-8 overflow-hidden h-full relative flex items-center justify-center">
       <div className="flex flex-row flex-shrink-0 justify-center items-center gap-2">
-        <Container className="h-8 w-8 lg:size-16 circle-1">
-          <JsLogo className="h-4 w-4 lg:size-8" />
+        <Container className="h-8 w-8 circle-1">
+          <ClaudeLogo className="h-4 w-4 " />
         </Container>
-        <Container className="h-12 w-12 lg:size-24 circle-2">
-          <NextJsLogo className="h-6 w-6 lg:size-12 dark:text-white" />
+        <Container className="h-12 w-12 circle-2">
+          <GoCopilot className="h-6 w-6 dark:text-white" />
         </Container>
-        <Container className="circle-3 lg:size-32">
-          <ReactLogo className="h-8 w-8 lg:size-16 dark:text-white" />
+        <Container className="circle-3">
+          <OpenAILogo className="h-8 w-8 dark:text-white" />
         </Container>
-        <Container className="h-12 w-12 circle-4 lg:size-24">
-          <ExpressLogo className="h-6 w-6 lg:size-12" />
+        <Container className="h-12 w-12 circle-4">
+          <MetaIconOutline className="h-6 w-6 " />
         </Container>
-        <Container className="h-8 w-8 circle-5 lg:size-16">
-          <TsLogo className="h-4 w-4 lg:size-8" />
+        <Container className="h-8 w-8 circle-5">
+          <GeminiLogo className="h-4 w-4 " />
         </Container>
       </div>
       <div className="h-40 w-px absolute top-20 m-auto z-40 bg-gradient-to-b from-transparent via-cyan-500 to-transparent animate-move">
@@ -127,11 +116,15 @@ const Sparkles = () => {
             ease: "linear",
           }}
           style={{
+            position: "absolute",
+            top: `${random() * 100}%`,
+            left: `${random() * 100}%`,
+            width: `2px`,
+            height: `2px`,
             borderRadius: "50%",
+            zIndex: 1,
           }}
-          className={`inline-block bg-black dark:bg-white absolute w-[2px] h-[2px] z-[1] top-[${
-            random() * 100
-          }%] left-[${random() * 100}%]`}
+          className="inline-block bg-black dark:bg-white"
         ></motion.span>
       ))}
     </div>
@@ -185,7 +178,7 @@ export const CardSkeletonContainer = ({
   return (
     <div
       className={cn(
-        "h-[20rem] md:h-[20rem] rounded-xl z-40 w-full",
+        "h-[15rem] md:h-[20rem] rounded-xl z-40",
         className,
         showGradient &&
           "bg-neutral-300 dark:bg-[rgba(40,40,40,0.70)] [mask-image:radial-gradient(50%_50%_at_50%_50%,white_0%,transparent_100%)]"

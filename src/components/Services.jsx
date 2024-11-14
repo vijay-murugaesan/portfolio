@@ -17,42 +17,14 @@ export function Services() {
     {
       title: "Front-End",
       description:
-        "Built for engineers, developers, dreamers, thinkers and doers.",
+        "As a web expert I tend to closely analyze the user audience to understand their needs and reflect these findings in UI design. Having agreed on the look and feel of a web app with project stakeholders, I push to bring it to life with smart front-end technologies.",
       icon: <IconTerminal2 />,
     },
     {
       title: "Back-End",
       description:
-        "It's as easy as using an Apple, and as expensive as buying one.",
+        "I accurately implement the business logic of your web app on the back end. I always rely on proven frameworks to ensure fast and quality coding. And I build well structured APIs to integrate your web app with corporate or third-party systems and services",
       icon: <IconAdjustmentsBolt />,
-    },
-    {
-      title: "Graphic Design",
-      description:
-        "Our prices are best in the market. No cap, no lock, no credit card required.",
-      icon: <IconEaseInOut />,
-    },
-    {
-      title: "Dev Ops",
-      description: "We just cannot be taken down by anyone.",
-      icon: <IconCloud />,
-    },
-    {
-      title: "Multi-talented Team",
-      description: "You can simply share passwords instead of buying new seats",
-      icon: <IconRouteAltLeft />,
-    },
-    {
-      title: "24/7 Customer Support",
-      description:
-        "We are available a 100% of the time. Atleast our AI Agents are.",
-      icon: <IconHelp />,
-    },
-    {
-      title: "Money back guarantee",
-      description:
-        "If you donot like EveryAI, we will convince you to like us.",
-      icon: <IconCurrencyDollar />,
     },
     {
       title: "And everything else",
@@ -71,7 +43,7 @@ export function Services() {
         </p>
       </div>
       (
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  relative z-10 py-10 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  relative z-10 py-10 max-w-7xl mx-auto">
         {features.map((feature, index) => (
           <Feature key={feature.title} {...feature} index={index} />
         ))}
@@ -105,7 +77,7 @@ const Feature = ({ title, description, icon, index }) => {
           {title}
         </span>
       </div>
-      <p className="text-sm text-neutral-600 dark:text-neutral-300 max-w-xs relative z-10 px-10">
+      <p className="text-sm text-neutral-600 dark:text-neutral-300 max-w-md relative z-10 px-10">
         {description}
       </p>
     </div>
