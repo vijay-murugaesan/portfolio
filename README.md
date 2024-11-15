@@ -20,6 +20,9 @@
 ## Technologies Used
 
 - [Next.js](https://nextjs.org/)
+- [Aceternity](https://github.com/aceternity/)
+- [TailwindCSS](https://github.com/tailwindlabs/tailwindcss)
+- [Nodemailer](https://github.com/nodemailer/nodemailer)
 
 
 ## For the Future
