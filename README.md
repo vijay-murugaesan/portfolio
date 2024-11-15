@@ -1,7 +1,5 @@
 <h1 align="center">Welcome to My Developer Portfolio 👋</h1>
 
-## Software Developer Portfolio Template built with Next.js, Tailwind , and Aceternity that helps you showcase my work and skills as a software developer.
-
 <p align="center">
   <kbd>
     <img src="https://github.com/user-attachments/assets/bacdd599-16bf-4739-978f-65c674e9bdae"></img>
