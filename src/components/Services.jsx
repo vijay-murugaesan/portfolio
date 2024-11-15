@@ -1,11 +1,6 @@
 import {
   IconAdjustmentsBolt,
-  IconCloud,
-  IconCurrencyDollar,
-  IconEaseInOut,
   IconHeart,
-  IconHelp,
-  IconRouteAltLeft,
   IconTerminal2,
 } from "@tabler/icons-react";
 
@@ -33,7 +28,7 @@ export function Services() {
     },
   ];
   return (
-    <div className="flex flex-col mt-[150px]" id="services">
+    <div className="flex flex-col mt-[30px]" id="services">
       <div className="flex flex-col justify-center items-center px-8">
         <h2 className="mx-auto text-white text-xl md:text-4xl lg:text-5xl font-sans relative z-20 font-bold tracking-tight">
           <Cover>Our Services</Cover>

@@ -1,6 +1,5 @@
-import React from "react";
-
-const JsLogo = ({ className }) => {
+import React from 'react';
+export const JsLogo = ({ className }) => {
   return (
     <svg
       viewBox="0 0 32 32"
@@ -30,4 +29,3 @@ const JsLogo = ({ className }) => {
   );
 };
 
-export default JsLogo;

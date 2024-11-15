@@ -1,4 +1,5 @@
-const TsLogo = ({ className }) => {
+import React from 'react';
+export const TsLogo = ({ className }) => {
   return (
     <svg
       viewBox="0 0 256 256"
@@ -44,5 +45,3 @@ const TsLogo = ({ className }) => {
     </svg>
   );
 };
-
-export default TsLogo;

@@ -1,4 +1,5 @@
-const NextJsLogo = ({ className }) => {
+import React from 'react';
+export const NextJsLogo = ({ className }) => {
   return (
     <svg
       viewBox="0 -101.5 512 512"
@@ -28,5 +29,3 @@ const NextJsLogo = ({ className }) => {
     </svg>
   );
 };
-
-export default NextJsLogo;

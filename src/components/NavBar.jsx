@@ -1,21 +1,8 @@
-import { FloatingDock } from "@/components/ui/floating-dock";
-import {
-  IconBrandGithub,
-  IconBrandX,
-  IconExchange,
-  IconHome,
-  IconNewSection,
-  IconTerminal2,
-} from "@tabler/icons-react";
-import {
-  Code2Icon,
-  DollarSignIcon,
-  MailIcon,
-  Settings2Icon,
-  StarIcon,
-} from "lucide-react";
-import Image from "next/image";
+import { IconHome } from "@tabler/icons-react";
+import { Code2Icon, MailIcon, Settings2Icon, StarIcon } from "lucide-react";
 import { GoProjectRoadmap } from "react-icons/go";
+
+import { FloatingDock } from "@/components/ui/floating-dock";
 
 export function NavBar() {
   const links = [

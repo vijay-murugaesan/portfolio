@@ -1,4 +1,5 @@
-const ExpressLogo = ({ className }) => {
+import React from 'react';
+export const ExpressLogo = ({ className }) => {
   return (
     <svg
       viewBox="0 -181.5 512 512"
@@ -32,4 +33,3 @@ const ExpressLogo = ({ className }) => {
   );
 };
 
-export default ExpressLogo;
